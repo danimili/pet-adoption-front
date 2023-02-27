@@ -1,0 +1,49 @@
+h1 {
+  display: inline-block;
+}
+
+.lgn-sgn-container {
+  width: 200px;
+}
+
+.lgn-sgn-forms {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.lgn-sgn-button {
+  background: linear-gradient(
+    90deg,
+    rgba(165, 23, 120, 1) 11%,
+    rgba(198, 19, 197, 1) 36%,
+    rgba(141, 23, 214, 1) 82%,
+    rgba(84, 27, 231, 1) 100%
+  );
+  color: white;
+  font-weight: bold;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  align-items: center;
+}
+
+.userName[type="text"],
+.userSurname[type="text"],
+.userEmail[type="text"],
+.userPhone[type="text"],
+.userRepassword[type="password"],
+.userPassword[type="password"] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgba(165, 23, 120, 1);
+  border-radius: 12px;
+  text-align: center;
+  width: 160px;
+}

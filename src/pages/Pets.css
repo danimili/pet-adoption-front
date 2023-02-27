@@ -1,0 +1,103 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  z-index: -1;
+}
+
+.pet-picture {
+  object-fit: cover;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.pets-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 35px;
+}
+
+.my-pets {
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+  display: inline-block;
+  width: 250px;
+  justify-content: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+img {
+  height: 150px;
+  width: 100%;
+  object-fit: "cover";
+  opacity: 1;
+}
+
+.listOfPets {
+  padding: 0px 20px 0px 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 35px;
+}
+
+.x-button {
+  width: 15px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  color: white;
+  opacity: 0.3;
+}
+
+.dog-icon {
+  display: flex;
+}
+
+.in-line-btns {
+  display: flex;
+}
+
+.in-line-btns:hover {
+  cursor: pointer;
+}
+
+.icon-space {
+  width: 50px;
+}
+
+.pet-data {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.del-icon {
+  display: flex;
+  justify-content: end;
+  /* margin-top:5px; */
+  /* margin-right:120px; */
+}
+
+.del-btn {
+  border: none;
+  background-color: white;
+}

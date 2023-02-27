@@ -1,0 +1,43 @@
+.topnav {
+  overflow: hidden;
+  background-color: #343a40;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: rgb(255 65 195);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+#logOut {
+  margin-top: 5.5px;
+  border-radius: 5px;
+  margin-right: 7px;
+  float: right;
+  justify-self: end;
+  cursor: pointer;
+  background-color: aliceblue;
+  padding: 8.5px;
+}
+
+#logOut:hover {
+  background-color: rgb(180, 185, 189);
+}
+
+#logOut:active {
+  background-color: rgba(255, 148, 221, 0.41);
+}

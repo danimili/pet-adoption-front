@@ -1,0 +1,42 @@
+.user-data {
+    display: flex;
+    padding: 1%;
+    margin: 8px 0;
+    border: 1px solid rgba(165,23,120,1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+.user-data-category {
+    margin-right: 100px;
+}
+
+.table {
+    margin: 0 auto;
+    width: 95%;
+    padding:1%;
+}
+
+.thead{
+    background-color: rgb(200, 200, 237);
+    justify-content: center;
+}
+
+.tr{
+text-align: center;    
+}
+
+.user-data-category{
+width: 10%;
+float: left;
+display: flex;
+text-align: left;
+}
+
+.pet-card-dashboard{
+display: flex;
+flex-direction: flex-end;
+margin-top: 50px;
+justify-content: center;
+align-items: center;
+}
