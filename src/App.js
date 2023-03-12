@@ -48,7 +48,7 @@ function App() {
 
   const fetchPets = async () => {
     try {
-      const res = await axios.get(`http://localhost:8080/pet`);
+      const res = await axios.get(`https://pet-adoption-back.vercel.app/pet`);
       const helloUserName = localStorage.getItem("loggedIn")
       setLoggedInUser(helloUserName)
       setPetsList(res.data);

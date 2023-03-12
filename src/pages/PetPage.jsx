@@ -35,7 +35,7 @@ export default function PetPage() {
       const token = localStorage.getItem("token");
       const config = { headers: { authorization: `Bearer ${token}` } };
       console.log(appId, "appId")
-      const res = await axios.post(`http://localhost:8080/pet/${petId}/adopt`,{}, config);
+      const res = await axios.post(`https://pet-adoption-back.vercel.app/pet/${petId}/adopt`,{}, config);
       setIsAdopted(true);
     } catch (err) {
       console.log(err);
@@ -47,7 +47,7 @@ export default function PetPage() {
     try {
       const token = localStorage.getItem("token");
       const config = { headers: { authorization: `Bearer ${token}` } };
-      const res = await axios.post(`http://localhost:8080/pet/${petId}/foster`,{}, config);
+      const res = await axios.post(`https://pet-adoption-back.vercel.app/pet/${petId}/foster`,{}, config);
       setIsFostered(true);
     } catch (err) {
       console.log(err);

@@ -35,7 +35,7 @@ export default function PetCard({ petData }) {
     try {
       const token = localStorage.getItem("token");
       const config = { headers: { authorization: `Bearer ${token}` } };
-      const res = await axios.post(`http://localhost:8080/pet/${petData._id}/return`,{}, config);
+      const res = await axios.post(`https://pet-adoption-back.vercel.app/pet/${petData._id}/return`,{}, config);
     } catch (err) {
       console.log(err);
     }
