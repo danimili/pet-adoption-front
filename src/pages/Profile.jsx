@@ -27,7 +27,7 @@ export default function Profile() {
       setTimeout(() => {
         setTooltip(false)
       }, 2000);
-      const res = axios.put(`http://localhost:8080/users/${loggedInUser._id}`, user)
+      const res = axios.put(`https://pet-adoption-back.vercel.app/users/${loggedInUser._id}`, user)
       setTooltip(true)
     } catch (err) {
       console.log(err)

@@ -28,7 +28,7 @@ export default function SignUp() {
         userRepassword: userInput.userRepassword,
         userBio: userInput.userBio
       }
-      const res = await axios.post('http://localhost:8080/users/signup', newUser);
+      const res = await axios.post('https://pet-adoption-back.vercel.app/users/signup', newUser);
       localStorage.setItem("loggedinuser", res.data.userName)
       setLoggedIn(true)
       navigateLogin()

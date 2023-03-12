@@ -13,7 +13,7 @@ export default function Users() {
   const {token} = useContext(AppContext)
   const getAllUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/users', {headers : {authorization: `Bearerrrrrrr ${token}`}});
+      const response = await axios.get('https://pet-adoption-back.vercel.app/users', {headers : {authorization: `Bearerrrrrrr ${token}`}});
       setAllUsers(response.data)
       // return response
     } catch (error) {

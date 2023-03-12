@@ -10,9 +10,9 @@ export default function MyPets({appId}) {
     try {
       const token = localStorage.getItem("token");
       const config = { headers: { authorization: `Bearer ${token}` } };
-      const response = await axios.get(`http://localhost:8080/pet/mypet/${appId}`, {}, config);
+      const response = await axios.get(`https://pet-adoption-back.vercel.app/pet/mypet/${appId}`, {}, config);
       const arr = await response.data.map(async petId => {
-        const res = await axios.get(`http://localhost:8080/pet/${petId}`, {}, config);
+        const res = await axios.get(`https://pet-adoption-back.vercel.app/pet/${petId}`, {}, config);
         return res.data
       })
       const allPets = await Promise.all(arr)

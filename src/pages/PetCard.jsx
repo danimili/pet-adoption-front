@@ -21,7 +21,7 @@ export default function PetCard({ petData }) {
     const handleDelete = async (e) => {
         e.stopPropagation()
         try {
-            const res = await axios.delete(`http://localhost:8080/pet/${petData._id}`);
+            const res = await axios.delete(`https://pet-adoption-back.vercel.app/pet/${petData._id}`);
             if (res.data.ok) {
                 deletePet(petData._id);
             }

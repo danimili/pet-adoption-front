@@ -45,7 +45,7 @@ export default function PetsForm() {
       petInfoData.append('breed', petInfo.breed);
       petInfoData.append('petImage', petImage);
 
-      const res = await axios.post("http://localhost:8080/pet/", petInfoData, { headers: { authorization: `Bearer ${token}` } });
+      const res = await axios.post("https://pet-adoption-back.vercel.app/pet/", petInfoData, { headers: { authorization: `Bearer ${token}` } });
       addPet(res.data)
       // setUserInput({ userEmail: '', userPassword: '' })
       setPetInfo({type: "",

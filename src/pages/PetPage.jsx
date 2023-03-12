@@ -21,7 +21,7 @@ export default function PetPage() {
 
   const getPetDetails = async () => {
     try {
-      const response = await axios.get(`http://localhost:8080/pet/${petId}`);
+      const response = await axios.get(`https://pet-adoption-back.vercel.app/pet/${petId}`);
       setPetInfo(response.data)
       return response
     } catch (error) {

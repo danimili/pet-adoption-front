@@ -16,7 +16,7 @@ export default function SearchComponent({ setAllPets }) {
   const handelSubmit = async (e) => {
     e.preventDefault();
    try {
-     const res = await axios.get("http://localhost:8080/pet/search", { params: values });
+     const res = await axios.get("https://pet-adoption-back.vercel.app/pet/search", { params: values });
      setAllPets(res.data)
    }
    catch (err) {

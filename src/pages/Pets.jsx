@@ -11,7 +11,7 @@ export default function Pets() {
 
   const getAllPets = async () => {
     try {
-      const response = await axios.get('http://localhost:8080/pet/');
+      const response = await axios.get('https://pet-adoption-back.vercel.app/pet/');
       setAllPets(response.data)
       if(!response) {
         setNoResultsMessage(true)
